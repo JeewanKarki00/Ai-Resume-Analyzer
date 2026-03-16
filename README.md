@@ -120,15 +120,20 @@ Check running pods:
 
 kubectl get pods
 
-Check autoscaling
+Check autoscalin
 
 kubectl get hpa
+
 ---
 
 
 ### Running Pods
 <img width="1899" height="1024" alt="Screenshot 2026-03-16 145620" src="https://github.com/user-attachments/assets/76ea9b15-a4f6-4080-b040-eb36a274955f" />
+
+Scaling Up
 <img width="1910" height="1025" alt="Screenshot 2026-03-16 145732" src="https://github.com/user-attachments/assets/10008477-751d-4a2b-beee-d6f946209a6e" />
+
+Scaling Down
 <img width="1884" height="804" alt="Screenshot 2026-03-16 150301" src="https://github.com/user-attachments/assets/bf2c667c-3f91-4ce7-ae29-c669d14bc395" />
 
 ### Horizontal Pod Autoscaler
@@ -136,7 +141,4 @@ kubectl get hpa
 
 ---
 
-## Author
 
-Jeewan Karki
-Cloud Analyst | Aspiring DevOps Engineer
