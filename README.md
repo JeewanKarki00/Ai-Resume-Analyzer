@@ -106,7 +106,23 @@ ai-resume-analyzer
 │
 └── README.md
 ```
+## How to Run the Project
 
+Build the Docker image:
+
+docker build -t resume-backend .
+
+Apply Kubernetes resources:
+
+kubectl apply -f kubernetes/
+
+Check running pods:
+
+kubectl get pods
+
+Check autoscaling
+
+kubectl get hpa
 ---
 
 
