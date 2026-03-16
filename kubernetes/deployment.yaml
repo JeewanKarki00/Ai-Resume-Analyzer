@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: resume-backend
+  name: resume-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: resume-backend
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: resume-backend
+    spec:
+      containers:
+      - name: resume-backend
+        image: resume-backend
+        imagePullPolicy: Never
+        resources: {}
+status: {}

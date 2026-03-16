@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2026-03-14T08:20:49Z"
+  labels:
+    app: resume-backend
+  name: resume-backend
+  namespace: default
+  resourceVersion: "54514"
+  uid: 7341ff9e-7859-4b84-8a7a-d3ab712fad2d
+spec:
+  clusterIP: 10.96.242.197
+  clusterIPs:
+  - 10.96.242.197
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 32468
+    port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: resume-backend
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
